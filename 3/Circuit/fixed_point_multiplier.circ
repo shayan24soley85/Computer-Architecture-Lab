@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project source="3.9.0" version="1.0">
-  This file is intended to be loaded by Logisim-evolution v3.9.0(https://github.com/logisim-evolution/).
+<project source="4.1.0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v4.1.0(https://github.com/logisim-evolution/).
 
   <lib desc="#Wiring" name="0">
     <tool name="Pin">
@@ -10,14 +10,15 @@
   <lib desc="#Gates" name="1"/>
   <lib desc="#Plexers" name="2"/>
   <lib desc="#Arithmetic" name="3"/>
-  <lib desc="#Memory" name="4"/>
-  <lib desc="#I/O" name="5"/>
-  <lib desc="#TTL" name="6"/>
-  <lib desc="#TCL" name="7"/>
-  <lib desc="#Base" name="8"/>
-  <lib desc="#BFH-Praktika" name="9"/>
-  <lib desc="#Input/Output-Extra" name="10"/>
-  <lib desc="#Soc" name="11"/>
+  <lib desc="#FPArithmetic" name="4"/>
+  <lib desc="#Memory" name="5"/>
+  <lib desc="#I/O" name="6"/>
+  <lib desc="#TTL" name="7"/>
+  <lib desc="#TCL" name="8"/>
+  <lib desc="#Base" name="9"/>
+  <lib desc="#BFH-Praktika" name="10"/>
+  <lib desc="#Input/Output-Extra" name="11"/>
+  <lib desc="#Soc" name="12"/>
   <main name="main"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -25,20 +26,20 @@
     <a name="simrand" val="0"/>
   </options>
   <mappings>
-    <tool lib="8" map="Button2" name="Poke Tool"/>
-    <tool lib="8" map="Button3" name="Menu Tool"/>
-    <tool lib="8" map="Ctrl Button1" name="Menu Tool"/>
+    <tool lib="9" map="Button2" name="Poke Tool"/>
+    <tool lib="9" map="Button3" name="Menu Tool"/>
+    <tool lib="9" map="Ctrl Button1" name="Menu Tool"/>
   </mappings>
   <toolbar>
-    <tool lib="8" name="Poke Tool"/>
-    <tool lib="8" name="Edit Tool"/>
-    <tool lib="8" name="Wiring Tool"/>
-    <tool lib="8" name="Text Tool"/>
+    <tool lib="9" name="Poke Tool"/>
+    <tool lib="9" name="Edit Tool"/>
+    <tool lib="9" name="Wiring Tool"/>
+    <tool lib="9" name="Text Tool"/>
     <sep/>
     <tool lib="0" name="Pin"/>
     <tool lib="0" name="Pin">
       <a name="facing" val="west"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </tool>
     <sep/>
     <tool lib="1" name="NOT Gate"/>
@@ -48,8 +49,8 @@
     <tool lib="1" name="NAND Gate"/>
     <tool lib="1" name="NOR Gate"/>
     <sep/>
-    <tool lib="4" name="D Flip-Flop"/>
-    <tool lib="4" name="Register"/>
+    <tool lib="5" name="D Flip-Flop"/>
+    <tool lib="5" name="Register"/>
   </toolbar>
   <circuit name="main">
     <a name="appearance" val="logisim_evolution"/>
@@ -89,14 +90,14 @@
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="C_frac"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="4"/>
     </comp>
     <comp lib="0" loc="(1360,90)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="C_int"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="4"/>
     </comp>
     <comp lib="0" loc="(150,140)" name="Tunnel">
@@ -208,6 +209,7 @@
     </comp>
     <comp lib="0" loc="(430,420)" name="Ground"/>
     <comp lib="0" loc="(450,250)" name="Clock">
+      <a name="appearance" val="classic"/>
       <a name="facing" val="north"/>
     </comp>
     <comp lib="0" loc="(450,360)" name="Ground">
@@ -264,7 +266,7 @@
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="E"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(690,750)" name="Tunnel">
       <a name="facing" val="south"/>
@@ -294,7 +296,7 @@
       <a name="label" val="B_frac"/>
       <a name="width" val="2"/>
     </comp>
-    <comp lib="0" loc="(860,150)" name="Ground">
+    <comp lib="0" loc="(860,160)" name="Ground">
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(880,860)" name="Splitter">
@@ -330,9 +332,9 @@
       <a name="width" val="4"/>
     </comp>
     <comp lib="3" loc="(920,130)" name="Adder"/>
-    <comp lib="6" loc="(170,960)" name="74283"/>
-    <comp lib="6" loc="(340,390)" name="7486"/>
-    <comp lib="6" loc="(560,860)" name="74157"/>
+    <comp lib="7" loc="(170,960)" name="74283"/>
+    <comp lib="7" loc="(340,390)" name="7486"/>
+    <comp lib="7" loc="(560,860)" name="74157"/>
     <comp loc="(680,120)" name="MUL"/>
     <wire from="(100,1000)" to="(130,1000)"/>
     <wire from="(100,970)" to="(160,970)"/>
@@ -469,7 +471,7 @@
     <wire from="(820,120)" to="(840,120)"/>
     <wire from="(820,90)" to="(1220,90)"/>
     <wire from="(820,90)" to="(820,120)"/>
-    <wire from="(860,140)" to="(860,150)"/>
+    <wire from="(860,140)" to="(860,160)"/>
     <wire from="(860,140)" to="(880,140)"/>
     <wire from="(870,120)" to="(880,120)"/>
     <wire from="(880,860)" to="(940,860)"/>
@@ -574,19 +576,19 @@
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="INIT"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(660,150)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="LOAD"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(660,200)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="CALC"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(80,500)" name="Pin">
       <a name="appearance" val="classic"/>
@@ -612,13 +614,13 @@
     <comp lib="1" loc="(270,850)" name="AND Gate"/>
     <comp lib="1" loc="(320,1020)" name="OR Gate"/>
     <comp lib="1" loc="(330,870)" name="OR Gate"/>
-    <comp lib="4" loc="(180,200)" name="D Flip-Flop">
+    <comp lib="5" loc="(180,200)" name="D Flip-Flop">
       <a name="appearance" val="logisim_evolution"/>
     </comp>
-    <comp lib="4" loc="(180,50)" name="D Flip-Flop">
+    <comp lib="5" loc="(180,50)" name="D Flip-Flop">
       <a name="appearance" val="logisim_evolution"/>
     </comp>
-    <comp lib="6" loc="(200,400)" name="7474"/>
+    <comp lib="7" loc="(200,400)" name="7474"/>
     <wire from="(100,670)" to="(120,670)"/>
     <wire from="(100,890)" to="(120,890)"/>
     <wire from="(100,930)" to="(100,980)"/>
@@ -687,8 +689,8 @@
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="OUTP"/>
-      <a name="output" val="true"/>
       <a name="radix" val="10signed"/>
+      <a name="type" val="output"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(380,810)" name="Splitter">
@@ -743,8 +745,8 @@
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="Q_Count"/>
-      <a name="output" val="true"/>
       <a name="radix" val="10signed"/>
+      <a name="type" val="output"/>
       <a name="width" val="2"/>
     </comp>
     <comp lib="0" loc="(460,200)" name="Ground">
@@ -757,7 +759,7 @@
     <comp lib="3" loc="(480,230)" name="Adder">
       <a name="width" val="2"/>
     </comp>
-    <comp lib="4" loc="(340,110)" name="Register">
+    <comp lib="5" loc="(340,110)" name="Register">
       <a name="appearance" val="logisim_evolution"/>
       <a name="width" val="2"/>
     </comp>
@@ -856,13 +858,13 @@
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="E"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(1440,520)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="Result"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(150,150)" name="Pin">
@@ -1030,6 +1032,7 @@
       <a name="label" val="CALC"/>
     </comp>
     <comp lib="0" loc="(620,870)" name="Clock">
+      <a name="appearance" val="classic"/>
       <a name="facing" val="north"/>
       <a name="label" val="Clk_test"/>
       <a name="phaseOffset" val="1"/>
@@ -1158,16 +1161,16 @@
     <comp lib="3" loc="(200,960)" name="Adder">
       <a name="width" val="4"/>
     </comp>
-    <comp lib="4" loc="(1340,670)" name="S-R Flip-Flop">
+    <comp lib="5" loc="(1340,670)" name="S-R Flip-Flop">
       <a name="appearance" val="logisim_evolution"/>
     </comp>
-    <comp lib="4" loc="(770,350)" name="Register">
+    <comp lib="5" loc="(770,350)" name="Register">
       <a name="appearance" val="logisim_evolution"/>
       <a name="label" val="RA"/>
       <a name="width" val="4"/>
     </comp>
-    <comp lib="6" loc="(720,150)" name="74193"/>
-    <comp lib="6" loc="(820,520)" name="74377"/>
+    <comp lib="7" loc="(720,150)" name="74193"/>
+    <comp lib="7" loc="(820,520)" name="74377"/>
     <comp loc="(400,1020)" name="SHR"/>
     <comp loc="(970,690)" name="CU"/>
     <wire from="(100,1020)" to="(180,1020)"/>

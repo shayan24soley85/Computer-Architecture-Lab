@@ -224,7 +224,7 @@
     <comp lib="0" loc="(270,270)" name="Tunnel">
       <a name="label" val="Clr"/>
     </comp>
-    <comp lib="0" loc="(310,660)" name="Tunnel">
+    <comp lib="0" loc="(300,660)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="Sign_A"/>
     </comp>
@@ -485,7 +485,7 @@
     <wire from="(260,270)" to="(270,270)"/>
     <wire from="(280,70)" to="(310,70)"/>
     <wire from="(290,170)" to="(310,170)"/>
-    <wire from="(310,660)" to="(320,660)"/>
+    <wire from="(300,660)" to="(320,660)"/>
     <wire from="(320,660)" to="(320,670)"/>
     <wire from="(320,670)" to="(370,670)"/>
     <wire from="(320,690)" to="(320,710)"/>

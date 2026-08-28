@@ -246,7 +246,7 @@
       <a name="facing" val="east"/>
       <a name="label" val="Mem_Inst"/>
     </comp>
-    <comp lib="0" loc="(340,490)" name="Pin">
+    <comp lib="0" loc="(340,470)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="south"/>
       <a name="label" val="Rst_RAM"/>
@@ -428,7 +428,7 @@ c 4b 1 73 44 c 4c 1
     <wire from="(340,1020)" to="(390,1020)"/>
     <wire from="(340,150)" to="(340,250)"/>
     <wire from="(340,150)" to="(350,150)"/>
-    <wire from="(340,490)" to="(340,500)"/>
+    <wire from="(340,470)" to="(340,500)"/>
     <wire from="(360,1040)" to="(360,1120)"/>
     <wire from="(360,1040)" to="(390,1040)"/>
     <wire from="(390,1060)" to="(390,1150)"/>

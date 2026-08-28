@@ -85,7 +85,7 @@
     <a name="circuit" val="main"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(120,220)" name="Pin">
+    <comp lib="0" loc="(130,220)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="Clk"/>
     </comp>
@@ -257,7 +257,7 @@
     </comp>
     <comp loc="(420,270)" name="Reg_File"/>
     <comp loc="(860,250)" name="ALU"/>
-    <wire from="(120,220)" to="(190,220)"/>
+    <wire from="(130,220)" to="(190,220)"/>
     <wire from="(140,330)" to="(140,350)"/>
     <wire from="(140,330)" to="(200,330)"/>
     <wire from="(150,280)" to="(180,280)"/>
